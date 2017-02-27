@@ -9,7 +9,7 @@ var morgan = require('morgan')
 var config = require('../config/runtime.json');
 var ejs = require('ejs');
 
-app.set('views', './public');
+app.set('views', '../public');
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
@@ -24,7 +24,7 @@ app.use('/api', apiRouter);
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.get('*', function(req, res) {
-  res.sendfile('../public/index.html');
+  res.sendfile('../public/index.ejs');
 });
 
 app.listen(port, function () {
