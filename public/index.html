@@ -14,47 +14,41 @@
   <!-- CSS (load bootstrap from a CDN) -->
     <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
 <!-- my stylesheet -->
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
 
   </head>
   <body>
-    <h1>MYOB Payslip Challenge</h1>
-    <p>Your solution goes here</p>
-    <div class = "blob">
-      hi there </div>
+    <h1 class = "center-align ">MYOB Payslip Challenge</h1>
+
+             <div class="container login center-align row">
+               <div class="col s12">
+                 <h2 class="headers highlight">HR Login</h2>
+                 <form class="" action="/login" method="post">
+
+                   <div class="row">
+                      <form class="col s12">
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">User Name</label>
+                          </div>
+                          <div class="input-field col s6">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="icon_prefix" type="password" class="validate">
+                            <label for="icon_prefix">Password</label>
+                          </div>
+                        </div>
+                        <div class="col s12 right-align">
+                          <button type="submit" name="button">Login</button>
+                        </div>
+
+                      </form>
+                    </div>
 
 
-      <div class="container-login center-align row">
-        <div class="col s12 m10 l6 login-block">
-          <h2 class="headers highlight">HR Login</h2>
-          <form class="" action="/login" method="post">
 
-            <div class="row">
-               <form class="col s12">
-                 <div class="row">
-                   <div class="input-field col s6">
-                     <i class="material-icons prefix">account_circle</i>
-                     <input id="icon_prefix" type="text" class="validate">
-                     <label for="icon_prefix">User Name</label>
-                   </div>
-                   <div class="input-field col s6">
-                     <i class="material-icons prefix">lock</i>
-                     <input id="icon_prefix" type="password" class="validate">
-                     <label for="icon_prefix">Password</label>
-                   </div>
-                 </div>
-                 <div class="col s12 right-align">
-                   <button type="submit" name="button">Login</button>
-                 </div>
 
-               </form>
-             </div>
-
-          </form>
-
-        </div>
-
-      </div>
 
 
       <!--jQuery -->

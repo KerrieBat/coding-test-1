@@ -9,3 +9,77 @@ color: green;
   /*outline-style
   margin: 10px;*/
 }
+/*general css*/
+.container {
+  color: MidnightBlue;
+  max-width: 650px
+}
+.row {
+  margin-bottom: 0;
+}
+h1 {
+  color: MidnightBlue;
+}
+input {
+  border: 3px solid AliceBlue !important;
+}
+label {
+  padding-left: 20px;
+  font-size: 14px;
+  }
+
+/*for employee*/
+.payVar {
+  padding-left: 0;
+}
+.unit {
+  padding: 12px;
+  color: DodgerBlue;
+  border: 3px solid AliceBlue;
+  background-color: Alice Blue;
+}
+
+
+  /* label focus color */
+ .input-field input:focus + label {
+   color: MidnightBlue !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid MidnightBlue !important;
+   box-shadow: 0 1px 0 0 MidnightBlue !important
+ }
+/*icon*/
+.input-field .prefix.active {
+  color: MidnightBlue !important;
+}
+
+/*Login screen*/
+.loginContainer {
+  background-color: AliceBlue;
+}
+
+
+/*payslip*/
+.name {
+  font-size: 28px;
+}
+.blueShade {
+  background-color: AliceBlue;
+}
+.details {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+button {
+  color: White;
+  border-radius: 8px;
+  padding: 12px 28px;
+  background-color: DodgerBlue;
+  font-size: 20px;
+}
+button:hover {
+    background-color: White;
+    color: DodgerBlue;
+}

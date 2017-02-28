@@ -1,9 +1,59 @@
-<div class="">
+<!doctype html>
+<html>
+  <head>
+  	<title>MYOB Payslip Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <!--fonts-->
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
+    <!-- load jquery -->
+    <script   src="https://code.jquery.com/jquery-3.1.1.js"/></script>
 
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
+  </head>
+  <body>
 
-<h2>Employee Info</h2>
+    <div class="container">
+      <div class="row">
+        <h2>Employee Info</h2>
 
+      </div>
+      <form class="" action="/payslip" method="post">
 
-</div>
+        <div class="row">
+          <div class="input-field col s12 m6 l6">
+            <label for="">Firstname</label>
+            <input type="text" name="firstName" >
+          </div>
+          <div class="input-field col s12 m6 l6">
+            <label for="">Lastname</label>
+            <input type="text" name="lastName" >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12 m6 l6">
+            <label for="">Annual Salary</label>
+            <input type="text" name="salary" >
+          </div>
+          <div class="input-field col s12 m6 l6">
+            <label for=""class = "payVar"><i class = "unit">%</i>Super Rate</label>
+            <input type="text" name="superRate" >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s6 right-align">
+            <button type="submit" class = "generatePayslipBtn" name="button">Generate Payslip</button>
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+</body>

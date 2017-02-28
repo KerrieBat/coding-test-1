@@ -10,25 +10,99 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
     <!-- load jquery -->
-  <script   src="https://code.jquery.com/jquery-3.1.1.js"/></script>
-  <!-- CSS (load bootstrap from a CDN) -->
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
-<!-- my stylesheet -->
-<link rel="stylesheet" href="/style.css">
+    <script   src="https://code.jquery.com/jquery-3.1.1.js"/></script>
+
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
-<div class="payslip">
 
-  <h2>Payslip</h2>
-  <h2><%name%></h2>
-  <div class="row blue">
-    <p classs = "">Pay Date</p>
-    <p class = ""><%paydate%></p>
-  </div>
+    <div class="container">
+      <div class="row">
+        <h2>Payslip</h2>
+        <h3 class = "name"><%= first_name %> <%= last_name %></h3>
+      </div>
+      <div class="divider"></div>
+      <div class="row blueShade details">
+        <div class = "col s6">
+          <p>Pay Date</p>
+        </div>
+        <div class = "col s6">
+          <p>last day <%= month %> <%= year %></p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row details">
+        <div class = "col s6">
+          <p>Pay Frequency</p>
+        </div>
+        <div class = "col s6">
+          <p><%= frequency %></p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row blueShade details">
+        <div class = "col s6">
+          <p>Annual Income</p>
+        </div>
+        <div class = "col s6">
+          <p><%= annual %></p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row details">
+        <div class = "col s6">
+          <p>Gross Income</p>
+        </div>
+        <div class = "col s6">
+          <p><%= gross %></p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row blueShade details">
+        <div class = "col s6">
+          <p>Income Tax</p>
+        </div>
+        <div class = "col s6">
+          <p><%= tax %></p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row details">
+        <div class = "col s6">
+          <p>Net Income</p>
+        </div>
+        <div class = "col s6">
+          <p><%= net %></p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row blueShade details">
+        <div class = "col s6">
+          <p>Super</p>
+        </div>
+        <div class = "col s6">
+          <p><%= super %></p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row details">
+        <div class = "col s6">
+          <p>Pay</p>
+        </div>
+        <div class = "col s6">
+          <p><%= pay %></p>
+        </div>
+      </div>
+      <!-- <div class="divider"></div> -->
+      <div class="row">
+        <div class="col s6 offset-s6 right-align">
+          <button type="submit" class = "payBtn" name="button">Pay</button>
+        </div>
 
-</div>
+      </div>
 
-
+    </div>
 
   </body>

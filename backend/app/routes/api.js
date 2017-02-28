@@ -69,6 +69,19 @@ apiRouter
 			payslipData[key] = payslip;
 
 			res.json({ message: 'Payslip created', key: key, error: false });
+			res.sendfile('../public/payslip.html', {
+				first_name : payslip.first_name,
+				last_name : payslip.last_name,
+				month : payslip.pay_date_month,
+				year : payslip.pay_date_year,
+				frequency : payslip.pay_frequency,
+				annual : payslip.annual_income,
+				gross : payslip.gross_income,
+				tax : payslip.income_tax,
+				net : payslip.net_income,
+				super : payslip.super,
+				pay : payslip.pay
+			});
 		}
 	});
 
