@@ -15,8 +15,13 @@ var generateKey = function (firstName, lastName, payDateYear, payDateMonth) {
 apiRouter
 	.route('/')
 	.get(function (req, res) {
-		res.json({ message: 'API is working', error: false });
-		res.render('login');
+		// res.json({ message: 'API is working', error: false });
+		res.sendfile('../public/login.html');
+
+		// res.render('login', {
+		// 	message: 'API is working',
+		// 	error: false
+		// });
 	});
 
 apiRouter
@@ -91,7 +96,11 @@ apiRouter
 	.route('/login')
 	.post(function (req, res) {
 
-		loginData = loginData || {};
+ 		loginData = loginData || {
+		// loginData = {
+		// 	"user": "kerrie",
+		//   "pass": "test"
+		// };
 
 		var user = req.body.user;
 		var sessionToken = uuid.v4();
@@ -99,8 +108,8 @@ apiRouter
 		loginData[user] = sessionToken;
 
 		res.json({ message: 'Logged in', error: false, session: sessionToken});
+		res.sendfile('../public/employee.html');
 	});
-
 apiRouter
 	.route('/logout')
 	.post(function (req, res) {

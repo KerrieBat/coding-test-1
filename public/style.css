@@ -1,4 +1,11 @@
 .blob {
 background-color: red;
-color: green; 
+color: green;
+}
+/*.container-login {
+  max-width: 600px;
+}*/
+.input-field {
+  /*outline-style
+  margin: 10px;*/
 }

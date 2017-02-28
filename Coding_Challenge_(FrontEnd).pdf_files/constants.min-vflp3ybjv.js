@@ -1,2 +1,0 @@
-define(["require","exports"],function(i,e){"use strict";var n;!function(i){i[i.InitializeFolder=0]="InitializeFolder"}(n=e.SharedLinkFolderAction||(e.SharedLinkFolderAction={}))});
-//# sourceMappingURL=constants.min.js-vfl2da2Li.map

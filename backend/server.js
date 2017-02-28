@@ -7,10 +7,10 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var morgan = require('morgan')
 var config = require('../config/runtime.json');
-var ejs = require('ejs');
+// var ejs = require('ejs');
 
-app.set('views', '../public');
-app.set('view engine', 'ejs');
+// app.set('views', '../public');
+// app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -24,7 +24,7 @@ app.use('/api', apiRouter);
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.get('*', function(req, res) {
-  res.sendfile('../public/index.ejs');
+  res.sendfile('../public/index.html');
 });
 
 app.listen(port, function () {
