@@ -1,14 +1,4 @@
-.blob {
-background-color: red;
-color: green;
-}
-/*.container-login {
-  max-width: 600px;
-}*/
-.input-field {
-  /*outline-style
-  margin: 10px;*/
-}
+
 /*general css*/
 .container {
   color: MidnightBlue;
@@ -35,10 +25,17 @@ label {
 .unit {
   padding: 12px;
   color: DodgerBlue;
-  border: 3px solid AliceBlue;
+  border-right: 2px solid AliceBlue;
   background-color: Alice Blue;
+  font-style: normal;
 }
-
+.place {
+  border-left: 2px solid AliceBlue;
+  padding: 12px;
+  color: DodgerBlue;
+  background-color: Alice Blue;
+  font-style: normal;
+}
 
   /* label focus color */
  .input-field input:focus + label {
